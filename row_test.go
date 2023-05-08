@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/FreeLeh/GoFreeDB/google/auth"
+	"github.com/domgolonka/GoFreeDB/google/auth"
 	"github.com/stretchr/testify/assert"
 )
 

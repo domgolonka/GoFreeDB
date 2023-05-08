@@ -5,9 +5,9 @@ import (
 	"errors"
 	"regexp"
 
-	"github.com/FreeLeh/GoFreeDB/google/auth"
+	"github.com/domgolonka/GoFreeDB/google/auth"
 
-	"github.com/FreeLeh/GoFreeDB/internal/google/sheets"
+	"github.com/domgolonka/GoFreeDB/internal/google/sheets"
 )
 
 // KVMode defines the mode of the key value store.

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/FreeLeh/GoFreeDB/internal/google/fixtures"
+	"github.com/domgolonka/GoFreeDB/internal/google/fixtures"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/oauth2"
 )

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/FreeLeh/GoFreeDB/google/auth"
-	"github.com/FreeLeh/GoFreeDB/internal/google/fixtures"
+	"github.com/domgolonka/GoFreeDB/google/auth"
+	"github.com/domgolonka/GoFreeDB/internal/google/fixtures"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/h2non/gock.v1"
 )

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FreeLeh/GoFreeDB/internal/google/sheets"
+	"github.com/domgolonka/GoFreeDB/internal/google/sheets"
 	"github.com/mitchellh/mapstructure"
 )
 

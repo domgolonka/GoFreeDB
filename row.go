@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/FreeLeh/GoFreeDB/internal/google/sheets"
+	"github.com/domgolonka/GoFreeDB/internal/google/sheets"
 )
 
 // GoogleSheetRowStoreConfig defines a list of configurations that can be used to customise how the GoogleSheetRowStore works.
@@ -50,11 +50,11 @@ type GoogleSheetRowStore struct {
 // If you are providing a slice of structs into the "output" parameter and you want to define the mapping between the
 // column name with the field name, you should add a "db" struct tag.
 //
-//     // Without the `db` struct tag, the column name used will be "Name" and "Age".
-//     type Person struct {
-//         Name string `db:"name"`
-//         Age int `db:"age"`
-//     }
+//	// Without the `db` struct tag, the column name used will be "Name" and "Age".
+//	type Person struct {
+//	    Name string `db:"name"`
+//	    Age int `db:"age"`
+//	}
 //
 // Please note that calling Select() does not execute the query yet.
 // Call GoogleSheetSelectStmt.Exec to actually execute the query.

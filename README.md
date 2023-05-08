@@ -17,11 +17,11 @@
 
 <div align="center">
 
-  ![Unit Test](https://github.com/FreeLeh/GoFreeDB/actions/workflows/unit_test.yml/badge.svg)
-  ![Integration Test](https://github.com/FreeLeh/GoFreeDB/actions/workflows/full_test.yml/badge.svg)
+  ![Unit Test](https://github.com/domgolonka/GoFreeDB/actions/workflows/unit_test.yml/badge.svg)
+  ![Integration Test](https://github.com/domgolonka/GoFreeDB/actions/workflows/full_test.yml/badge.svg)
 ![Coverage](https://img.shields.io/badge/Coverage-82.2%25-brightgreen)
-  [![Go Report Card](https://goreportcard.com/badge/github.com/FreeLeh/GoFreeDB)](https://goreportcard.com/report/github.com/FreeLeh/GoFreeDB)
-  [![Go Reference](https://pkg.go.dev/badge/github.com/FreeLeh/GoFreeDB.svg)](https://pkg.go.dev/github.com/FreeLeh/GoFreeDB)
+  [![Go Report Card](https://goreportcard.com/badge/github.com/domgolonka/GoFreeDB)](https://goreportcard.com/report/github.com/domgolonka/GoFreeDB)
+  [![Go Reference](https://pkg.go.dev/badge/github.com/domgolonka/GoFreeDB.svg)](https://pkg.go.dev/github.com/domgolonka/GoFreeDB)
 
 </div>
 
@@ -32,7 +32,7 @@
 3. Support **flexible enough query language** to perform various data queries.
 4. **Manually manipulate data** via the familiar Google Sheets UI (no admin page required).
 
-> For more details, please read [our analysis](https://github.com/FreeLeh/docs/blob/main/freedb/alternatives.md#why-should-you-choose-freedb)
+> For more details, please read [our analysis](https://github.com/domgolonka/docs/blob/main/freedb/alternatives.md#why-should-you-choose-freedb)
 > on other alternatives and how it compares with `FreeDB`.
 
 ## Table of Contents
@@ -56,7 +56,7 @@
 
 ## Protocols
 
-Clients are strongly encouraged to read through the **[protocols document](https://github.com/FreeLeh/docs/blob/main/freedb/protocols.md)** to see how things work
+Clients are strongly encouraged to read through the **[protocols document](https://github.com/domgolonka/docs/blob/main/freedb/protocols.md)** to see how things work
 under the hood and **the limitations**.
 
 ## Getting Started
@@ -64,12 +64,12 @@ under the hood and **the limitations**.
 ### Installation
 
 ```
-go get github.com/FreeLeh/GoFreeDB
+go get github.com/domgolonka/GoFreeDB
 ```
 
 ### Pre-requisites
 
-1. Obtain a Google [OAuth2](https://github.com/FreeLeh/docs/blob/main/google/authentication.md#oauth2-flow) or [Service Account](https://github.com/FreeLeh/docs/blob/main/google/authentication.md#service-account-flow) credentials.
+1. Obtain a Google [OAuth2](https://github.com/domgolonka/docs/blob/main/google/authentication.md#oauth2-flow) or [Service Account](https://github.com/domgolonka/docs/blob/main/google/authentication.md#service-account-flow) credentials.
 2. Prepare a Google Sheets spreadsheet where the data will be stored.
 
 ## Row Store
@@ -88,8 +88,8 @@ to understand the purpose of the `db` struct field tag.
 
 ```go
 import (
-	"github.com/FreeLeh/GoFreeDB"
-	"github.com/FreeLeh/GoFreeDB/google/auth"
+	"github.com/domgolonka/GoFreeDB"
+	"github.com/domgolonka/GoFreeDB/google/auth"
 )
 
 // If using Google Service Account.
@@ -239,8 +239,8 @@ type WithTagPerson struct {
 
 ```go
 import (
-	"github.com/FreeLeh/GoFreeDB"
-	"github.com/FreeLeh/GoFreeDB/google/auth"
+	"github.com/domgolonka/GoFreeDB"
+	"github.com/domgolonka/GoFreeDB/google/auth"
 )
 
 // If using Google Service Account.
@@ -289,7 +289,7 @@ err := kv.Delete(context.Background(), "k1")
 
 ### Supported Modes
 
-> For more details on how the two modes are different, please read the [protocol document](https://github.com/FreeLeh/docs/blob/main/freedb/protocols.md).
+> For more details on how the two modes are different, please read the [protocol document](https://github.com/domgolonka/docs/blob/main/freedb/protocols.md).
 
 There are 2 different modes supported:
 
@@ -316,4 +316,4 @@ kv := freedb.NewGoogleSheetKVStore(
 
 ## License
 
-This project is [MIT licensed](https://github.com/FreeLeh/GoFreeDB/blob/main/LICENSE).
+This project is [MIT licensed](https://github.com/domgolonka/GoFreeDB/blob/main/LICENSE).
