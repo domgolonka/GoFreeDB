@@ -23,7 +23,7 @@ const (
 	// Currently limited to 26.
 	// Otherwise, the sheet creation must extend the column as well to make the rowGetIndicesQueryTemplate formula works.
 	// TODO(edocsss): add an option to extend the number of columns.
-	maxColumn = 26
+	maxColumn = 300
 
 	scratchpadBooked          = "BOOKED"
 	scratchpadSheetNameSuffix = "_scratch"
